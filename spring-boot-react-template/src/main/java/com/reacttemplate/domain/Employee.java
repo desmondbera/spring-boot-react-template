@@ -5,6 +5,9 @@ import java.util.Objects;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.Version;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
 public class Employee {
@@ -17,6 +20,10 @@ public class Employee {
 	private String lastName;
 	private String description;
 
+	@Version
+	@JsonIgnore
+	private Long version;
+	
 	private Employee() {
 	}
 
