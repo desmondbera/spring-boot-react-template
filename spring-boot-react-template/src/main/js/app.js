@@ -6,7 +6,7 @@ const client = require('./client');
 
 const follow = require('./follow'); // function to hop multiple links by "rel"
 
-var stompClient = require('./websocket-listener')
+const stompClient = require('./websocket-listener');
 
 const root = '/api';
 
