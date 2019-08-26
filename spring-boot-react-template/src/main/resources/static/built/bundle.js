@@ -41829,6 +41829,7 @@ function (_React$Component) {
     _this.state = {
       employees: [],
       attributes: [],
+      page: 1,
       pageSize: 2,
       links: {}
     };
